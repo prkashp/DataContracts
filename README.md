@@ -1,4 +1,4 @@
-# DataContracts
+# Data Contracts
 Data contracts helps in defining a fixed format between a data producer and consumer.
 
 # Motivation
