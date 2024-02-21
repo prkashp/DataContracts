@@ -12,7 +12,7 @@ Data contracts can be roughly divided into 4 sub-parts
   * Data Types
   * > Format 
     > Length
-    > Group/Set of allowed values
+    > Sets of allowed values
 - Semantics: Generally business rules that required enforcement
 - SLAs: Commitment on availablity and freshness of data
 - Governance: Keeping conpliance in check with local laws
