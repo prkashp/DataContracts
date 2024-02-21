@@ -8,13 +8,13 @@ In most of case an organisation has separate teams either producing or providing
 Data contracts can be roughly divided into 4 sub-parts
 - Schema: This can have following coverage
   * Field name (Column name)
-  * Mandate
+  * Mandate: Any constraints like default and nullability
   * Data Types
     - Format
-    - Length
-    - Sets of allowed values
+    - Length: Incase of integer precision and scale
+    - Categorical Column: Sets of allowed values
 - Semantics: Generally business rules that required enforcement
 - SLAs: Commitment on availablity and freshness of data
-- Governance: Keeping conpliance in check with local laws
+- Governance: Keeping compliance in check with local laws
 
 
