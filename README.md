@@ -19,7 +19,7 @@ Data contracts can be roughly divided into 4 sub-parts
 
 # Solution
 We have an open source library to lint all kinds of schema and quality checks.To create a contract we would require a yaml file to store all information about dataset. Soda core is being used at the backend.
-```
+```yaml
 
 dataContractSpecification: 0.1.1
 id: urn:datacontract:checkout:orders-latest
@@ -154,7 +154,7 @@ quality:
 
 After we have our contract yaml ready. To run contracts we have below code to run.
 
-```
+```python
 from datacontract.data_contract import DataContract
 
 data_contract = DataContract(data_contract_file="datacontract.yaml")
