@@ -1,8 +1,11 @@
 # Data Contracts
 Data contracts helps in defining a fixed format between a data producer and consumer.
 
-# Motivation
+# Motivation(Why we require this?)
 In most of case an organisation has separate teams either producing or providing new data and teams who use that data for reporting or other data products. And these teams are usually disconnected. For Data consumers it is utmost important to have a stable data pipelines and dashboards which can be improved by not having any unknowns in data structure, format and semantics. 
+- Data pipelines regularly breaking due to data quality issues
+- Communication gap between system implementors, data engineers and data consumers
+- No team ownership of data defects, leading to constant untouched backlog 
 
 # Agreements
 Data contracts can be roughly divided into 4 sub-parts
@@ -17,7 +20,7 @@ Data contracts can be roughly divided into 4 sub-parts
 - SLAs: Commitment on availablity and freshness of data
 - Governance: Keeping compliance in check with local laws
 
-# Solution
+# Solution(How data contracts can be used?)
 We have an open source library to lint all kinds of schema and quality checks.To create a contract we would require a yaml file to store all information about dataset. Soda core is being used at the backend.
 ```yaml
 
@@ -164,4 +167,10 @@ if not run.has_passed():
     # Abort pipeline, alert, or take corrective actions...
 ```
 Currently this library supports major databases and local format. To start with Postgres, Snowflake, S3, Databricks are supported along with JSON, CSV and parquet.
+
+#Benefits
+- Not too much require to implement data contracts, have compulsory deployment pipeline before merge would be sufficient.
+- This also removes huge backlog of data bugs and new deployment only pass when data contracts are intact.
+- Accurate data ownership and categorization for better data governance and data products.
+- This process is completely automated and decentralized by minimizing dependencies across teams.
 
