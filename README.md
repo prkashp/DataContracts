@@ -168,7 +168,7 @@ if not run.has_passed():
 ```
 Currently this library supports major databases and local format. To start with Postgres, Snowflake, S3, Databricks are supported along with JSON, CSV and parquet.
 
-#Benefits
+# Benefits
 - Not too much require to implement data contracts, have compulsory deployment pipeline before merge would be sufficient.
 - This also removes huge backlog of data bugs and new deployment only pass when data contracts are intact.
 - Accurate data ownership and categorization for better data governance and data products.
