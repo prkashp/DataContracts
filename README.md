@@ -2,10 +2,10 @@
 Data contracts helps in defining a fixed format between a data producer and consumer.
 
 # Motivation(Why we require this?)
-In most of case an organisation has separate teams either producing or providing new data and teams who use that data for reporting or other data products. And these teams are usually disconnected. For Data consumers it is utmost important to have a stable data pipelines and dashboards which can be improved by not having any unknowns in data structure, format and semantics. 
-- Data pipelines regularly breaking due to data quality issues
-- Communication gap between system implementors, data engineers and data consumers
-- No team ownership of data defects, leading to constant untouched backlog 
+Even if data design documents can solve issue caused by bad data quality, its not the case with large organisation where teams work in parrallel and independent. In most cases, an organization has separate teams either producing or providing new data and teams that use that data for reporting or other data products. And these teams are usually disconnected. For data consumers, it is utmost important to have stable data pipelines and dashboards, which can be improve by not having any unknowns in data structure, format, or semantics. 
+- Data pipelines regularly break due to data quality issues.
+- Communication gap between system implementors, data engineers, and data consumers.
+- No team ownership of data defects, leading to a constant untouched backlog.
 
 # Agreements
 Data contracts can be roughly divided into 4 sub-parts
@@ -169,8 +169,8 @@ if not run.has_passed():
 Currently this library supports major databases and local format. To start with Postgres, Snowflake, S3, Databricks are supported along with JSON, CSV and parquet.
 
 # Benefits
-- Not too much require to implement data contracts, have compulsory deployment pipeline before merge would be sufficient.
-- This also removes huge backlog of data bugs and new deployment only pass when data contracts are intact.
+- Not too much is required to implement data contracts; having a compulsory deployment pipeline before feature merge would be sufficient.
+- This also removes a huge backlog of data bugs, and new deployments only pass when data contracts are intact.
 - Accurate data ownership and categorization for better data governance and data products.
 - This process is completely automated and decentralized by minimizing dependencies across teams.
 
